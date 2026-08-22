@@ -1,0 +1,6 @@
+{
+  "extends": "@react-native/typescript-config",
+  "references": [{ "path": "../../packages/api-contract" }],
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"]
+}
