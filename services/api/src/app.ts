@@ -14,7 +14,7 @@ const rpcHandler = new RPCHandler(router, {
 
 export const app = new Hono();
 
-app.get("/healthz", (context) =>
+app.get("/health", (context) =>
   context.json({ status: "ok", service: "kar-le-bhai-api" }),
 );
 
