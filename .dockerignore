@@ -1,0 +1,8 @@
+node_modules
+.turbo
+dist
+.pnpm-store
+.git
+**/node_modules
+**/dist
+**/build
