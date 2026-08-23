@@ -12,6 +12,7 @@
   "dependencies": {
     "@hono/node-server": "^1.19.0",
     "@kar-le-bhai/api-contract": "workspace:*",
+    "@kar-le-bhai/domain": "workspace:*",
     "@orpc/server": "^1.10.0",
     "hono": "^4.9.0"
   },
