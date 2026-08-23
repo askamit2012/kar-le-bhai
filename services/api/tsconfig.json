@@ -3,8 +3,19 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "dist",
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "references": [{ "path": "../../packages/api-contract" }],
-  "include": ["src/**/*.ts"]
+  "references": [
+    {
+      "path": "../../packages/domain"
+    },
+    {
+      "path": "../../packages/api-contract"
+    }
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
 }
