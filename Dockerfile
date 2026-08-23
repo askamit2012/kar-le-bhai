@@ -39,5 +39,5 @@ COPY --from=builder /app /app
 ENV PORT=8787
 EXPOSE 8787
 
-# Run the API service using node on the compiled code
-CMD ["node", "services/api/dist/index.js"]
+# Run the API service using pnpm (which uses tsx for on-the-fly TS execution)
+CMD ["pnpm", "--filter", "@kar-le-bhai/api", "start"]
