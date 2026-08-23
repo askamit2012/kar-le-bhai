@@ -12,8 +12,9 @@ COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.json tsconfig.json ./
 # Copy package structures for dependency installation caching
 COPY packages/domain/package.json ./packages/domain/
 COPY packages/api-contract/package.json ./packages/api-contract/
-COPY packages/config/ ./packages/config/
+COPY packages/config/tsconfig.base.json ./packages/config/
 COPY services/api/package.json ./services/api/
+COPY apps/mobile/package.json ./apps/mobile/
 
 # Install all dependencies (dev dependencies are needed to build)
 RUN pnpm install --frozen-lockfile
