@@ -7,7 +7,7 @@ WORKDIR /app
 
 FROM base AS builder
 # Copy workspace configuration files
-COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.json tsconfig.json .npmrc ./
+COPY pnpm-lock.yaml pnpm-workspace.yaml package.json turbo.json tsconfig.json ./
 
 # Copy package structures for dependency installation caching
 COPY packages/domain/package.json ./packages/domain/
